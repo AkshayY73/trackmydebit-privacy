@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete Your Account</title>
+<meta name="description" content="How to delete your Track My Debit account and the data stored with it.">
+<style>
+  :root {
+    --bg: #f8fafc; --surface: #ffffff; --ink: #0f172a; --muted: #475569;
+    --line: #e2e8f0; --accent: #4f46e5; --accent-soft: #eef2ff; --on-accent: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b1120; --surface: #111827; --ink: #f1f5f9; --muted: #94a3b8;
+      --line: #1e293b; --accent: #a5b4fc; --accent-soft: #1e1b4b; --on-accent: #0b1120;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0 0 28px; }
+  h2 { font-size: 19px; margin: 36px 0 10px; }
+  .steps {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+    padding: 22px 22px 18px; margin: 0;
+  }
+  .steps h2 { margin-top: 0; }
+  ol { padding-left: 22px; margin: 0; }
+  ol li { margin: 10px 0; }
+  ul { padding-left: 22px; margin: 8px 0 0; }
+  li { margin: 6px 0; }
+  .button {
+    display: inline-block; margin: 14px 0 4px; padding: 12px 20px; border-radius: 12px;
+    background: var(--accent); color: var(--on-accent); font-weight: 600; text-decoration: none;
+  }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  code { font-size: 15px; background: var(--accent-soft); padding: 1px 6px; border-radius: 6px; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0 0; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+  th { font-weight: 600; color: var(--muted); font-size: 13px; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  ::selection { background: var(--accent); color: var(--on-accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Delete your Track My Debit account</h1>
+  <p class="meta">Track My Debit · Android and iOS app</p>
+
+  <section class="steps" aria-labelledby="how">
+    <h2 id="how">How to request deletion</h2>
+    <ol>
+      <li>Send an email to <a href="mailto:grievance@trackmydebit.com?subject=Delete%20my%20Track%20My%20Debit%20account"><strong>grievance@trackmydebit.com</strong></a> <strong>from the email address you use to sign in</strong> to Track My Debit.</li>
+      <li>Use the subject <code>Delete my account</code>. You don't need to give a reason.</li>
+      <li>We delete your account and the data listed below within <strong>7 business days</strong>, and reply by email to confirm.</li>
+    </ol>
+    <a class="button" href="mailto:grievance@trackmydebit.com?subject=Delete%20my%20Track%20My%20Debit%20account">Email a deletion request</a>
+    <p class="muted">If you no longer have access to that email address, write from another address and tell us the email you signed up with. We may ask you to confirm it is your account before deleting it.</p>
+  </section>
+
+  <h2>What is deleted</h2>
+  <table>
+    <thead><tr><th>Data</th><th>Where it is stored</th></tr></thead>
+    <tbody>
+      <tr><td>Your sign-in account (email, sign-in method, password if you used email)</td><td>Google Firebase Authentication</td></tr>
+      <tr><td>Your profile: name, email, age, sign-up time, trial status</td><td>Google Cloud Firestore and our sign-in server</td></tr>
+      <tr><td>Your session record: session ID, sign-in time and device description</td><td>Google Cloud Firestore</td></tr>
+    </tbody>
+  </table>
+  <p>Deleting the account also signs you out on every device.</p>
+
+  <h2>What is kept, and for how long</h2>
+  <ul>
+    <li><strong>Server logs:</strong> our sign-in server writes a log line when an account is created or deleted. It contains only your account's random ID, not your name or email, and is removed automatically when the hosting provider rotates its logs, within 30 days.</li>
+    <li><strong>Your request email:</strong> kept only until we have confirmed the deletion to you, then deleted.</li>
+    <li>Nothing else from your account is kept.</li>
+  </ul>
+
+  <h2>Data on your phone</h2>
+  <p>Your SMS messages, transactions, SMS formats and categories are never uploaded, so we have no copy to delete. To remove them from your phone, open the app and go to <strong>Settings → Privacy &amp; consent → erase all data</strong>, or uninstall the app.</p>
+
+  <h2>Using the app without an account</h2>
+  <p>If you never created an account ("Use without an account"), nothing is stored online. Erasing data in the app or uninstalling it removes everything.</p>
+
+  <footer>
+    Track My Debit · <a href="../">Privacy policy</a> · <a href="mailto:grievance@trackmydebit.com">grievance@trackmydebit.com</a>
+  </footer>
+</main>
+</body>
+</html>
